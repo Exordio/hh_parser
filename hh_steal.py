@@ -13,4 +13,12 @@ base_Url = 'https://pushkino.hh.ru/search/vacancy?resume=f45bd12eff079396740039e
 def hh_Parse(base_url, headers):
     session = requests.Session();
     request = session.get(base_url, headers=headers)
+    if request.status_code == 200:
+        print('OK')
+        soup = bs(request.content, 'html.parser')
+        divs = soup.find_all('div', attrs={'data-qa': 'vacancy-serp__vacancy'})
+        print(divs)
+    else:
+        print('ERROR')
 
+hh_Parse(base_Url, headers)
