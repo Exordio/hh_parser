@@ -5,9 +5,10 @@ import pandas as pd
 from bs4 import BeautifulSoup as bs
 
 
-#csvFile = "vacancyCSV.csv"
 excelFile = "vacancyxls.xlsx"
+
 #emulaciya povedeniya brauzera
+
 headers = {'accept': '*/*',
            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0'}
 
@@ -40,7 +41,5 @@ def hh_Parse(base_url, headers):
 
     else:
         print('ERROR')
-
-#x = pd.read_csv(csvFile)
 
 hh_Parse(base_Url, headers)
