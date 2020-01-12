@@ -5,6 +5,7 @@ import pandas as pd
 from bs4 import BeautifulSoup as bs
 
 
+csvFile = "vacancyCSV.csv"
 #emulaciya povedeniya brauzera
 headers = {'accept': '*/*',
            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0'}
@@ -18,9 +19,7 @@ def hh_Parse(base_url, headers):
         print('OK')
         soup = bs(request.content, 'html.parser')
         divs = soup.find_all('div', attrs = {'data-qa': 'vacancy-serp__vacancy'})
-
         colum_Names = ['name_Vacancy', 'name_Company', 'vacancy_Link', 'vacancy_Payday']
-
         vacancy_DF = pd.DataFrame(columns = colum_Names)
 
         for div in divs:
@@ -36,7 +35,11 @@ def hh_Parse(base_url, headers):
             #print("{} | {} | {} | {}".format(name_Vacancy, payday, name_Company, link))
 
         print(vacancy_DF)
+        vacancy_DF.to_csv(csvFile, index = False, sep="\t", encoding="utf-8")
+
     else:
         print('ERROR')
+
+x = pd.read_csv(csvFile, sep = "\t", encoding = 'UTF-8')
 
 hh_Parse(base_Url, headers)
