@@ -5,7 +5,8 @@ import pandas as pd
 from bs4 import BeautifulSoup as bs
 
 
-csvFile = "vacancyCSV.csv"
+#csvFile = "vacancyCSV.csv"
+excelFile = "vacancyxls.xlsx"
 #emulaciya povedeniya brauzera
 headers = {'accept': '*/*',
            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0'}
@@ -31,15 +32,15 @@ def hh_Parse(base_url, headers):
             except AttributeError:
                 payday = div.find('div', attrs={'class': 'vacancy-serp-item__compensation'})
 
-            vacancy_DF.loc[len(vacancy_DF)] = [name_Vacancy, name_Company, link, payday]
+            vacancy_DF.loc[len(vacancy_DF)] = [name_Vacancy, name_Company, payday, link]
             #print("{} | {} | {} | {}".format(name_Vacancy, payday, name_Company, link))
 
         print(vacancy_DF)
-        vacancy_DF.to_csv(csvFile, index = False, sep="\t", encoding="utf-8")
+        vacancy_DF.to_excel(excelFile, index = False, encoding="utf-8", sheet_name='Jobs')
 
     else:
         print('ERROR')
 
-x = pd.read_csv(csvFile, sep = "\t", encoding = 'UTF-8')
+#x = pd.read_csv(csvFile)
 
 hh_Parse(base_Url, headers)
