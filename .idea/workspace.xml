@@ -28,7 +28,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="hh_steal" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -44,7 +45,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hh_steal.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Admin\Desktop\Python\hh\hh_parser\hh_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,6 +84,7 @@
       <updated>1578857776720</updated>
       <workItem from="1578857788291" duration="12799000" />
       <workItem from="1578920365743" duration="1933000" />
+      <workItem from="1578930807528" duration="502000" />
     </task>
     <servers />
   </component>
@@ -94,32 +96,33 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="1032" y="221" key="#Notifications/0.40.1920.1040@0.40.1920.1040" timestamp="1578859729790" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1578921778493">
+    <state width="1340" height="264" key="GridCell.Tab.0.bottom" timestamp="1578930915499">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1578921778493" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1578921778492">
+    <state width="1340" height="264" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1578930915499" />
+    <state width="1340" height="264" key="GridCell.Tab.0.center" timestamp="1578930915499">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1578921778492" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1578921778492">
+    <state width="1340" height="264" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1578930915499" />
+    <state width="1340" height="264" key="GridCell.Tab.0.left" timestamp="1578930915498">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1578921778492" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1578921778492">
+    <state width="1340" height="264" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1578930915498" />
+    <state width="1340" height="264" key="GridCell.Tab.0.right" timestamp="1578930915499">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1578921778492" />
-    <state x="653" y="182" key="SettingsEditor" timestamp="1578920480161">
+    <state width="1340" height="264" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1578930915499" />
+    <state x="653" y="182" key="SettingsEditor" timestamp="1578930861634">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="653" y="182" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1578920480161" />
+    <state x="653" y="182" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1578930861634" />
     <state x="655" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1578920382438">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="655" y="382" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1578920382438" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hh_parser$hh_steal.coverage" NAME="hh_steal Coverage Results" MODIFIED="1578930915475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hh$hh_steal.coverage" NAME="hh_steal Coverage Results" MODIFIED="1578921778477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
