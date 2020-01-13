@@ -21,7 +21,7 @@ def hh_Parse(base_url, headers):
         print('OK')
         soup = bs(request.content, 'html.parser')
         divs = soup.find_all('div', attrs = {'data-qa': 'vacancy-serp__vacancy'})
-        colum_Names = ['name_Vacancy', 'name_Company', 'vacancy_Link', 'vacancy_Payday']
+        colum_Names = ['name_Vacancy', 'name_Company', 'vacancy_Payday', 'vacancy_Link', 'vacancy_Responsibility', 'vacancy_Requirement']
         vacancy_DF = pd.DataFrame(columns = colum_Names)
 
         for div in divs:
@@ -33,12 +33,13 @@ def hh_Parse(base_url, headers):
             except AttributeError:
                 payday = div.find('div', attrs={'class': 'vacancy-serp-item__compensation'})
 
-            vacancy_DF.loc[len(vacancy_DF)] = [name_Vacancy, name_Company, payday, link]
-            #print("{} | {} | {} | {}".format(name_Vacancy, payday, name_Company, link))
+            vacancy_Responsibility = div.find('div', attrs = {'data-qa': 'vacancy-serp__vacancy_snippet_responsibility'}).text
+            vacancy_Requirement = div.find('div', attrs = {'data-qa': 'vacancy-serp__vacancy_snippet_requirement'}).text
 
+            vacancy_DF.loc[len(vacancy_DF)] = [name_Vacancy, name_Company, payday, link, vacancy_Responsibility, vacancy_Requirement]
+            #print("{} | {} | {} | {}".format(name_Vacancy, payday, name_Company, link))
         print(vacancy_DF)
         vacancy_DF.to_excel(excelFile, index = False, encoding="utf-8", sheet_name='Jobs')
-
     else:
         print('ERROR')
 
