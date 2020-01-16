@@ -1,7 +1,7 @@
 from http.cookiejar import request_host
 
 import requests
-import time
+import os
 import pandas as pd
 from bs4 import BeautifulSoup as bs
 
@@ -65,6 +65,9 @@ def hh_Parse(base_url, headers):
         #    print(i)
     print(vacancy_DF)
     vacancy_DF.to_excel(excelFile, index=False, encoding="utf-8", sheet_name='Jobs')
+
+    print("ALL PARSED, exec file")
+    os.startfile(excelFile)
 
 
 
