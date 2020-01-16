@@ -6,6 +6,6 @@ bs4, requests, openpyxl, pandas, lxml.
 
 now it's work 30% faster
 
-![Result of work](https://i.imgur.com/UIGBHfs.png)
+![Result of work](https://i.imgur.com/zR4vRZz.png)
 
 GI
